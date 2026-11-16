@@ -1,4 +1,4 @@
-# Lyrik — Windows "now playing" helper.
+# Lyrikx — Windows "now playing" helper.
 # Reads the System Media Transport Controls (the same data the Windows volume flyout shows),
 # so it works with Spotify, Apple Music for Windows, iTunes, browsers, VLC and more.
 #   -Mode watch : prints one JSON line about every 600 ms

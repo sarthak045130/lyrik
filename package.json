@@ -1,10 +1,10 @@
 {
   "name": "lyrik",
-  "productName": "Lyrik",
+  "productName": "Lyrikx",
   "version": "1.0.0",
   "description": "Full-screen, word-by-word lyrics with beat-synced edge lights — Windows and Mac",
   "main": "main.js",
-  "author": "Lyrik",
+  "author": "Lyrikx",
   "scripts": {
     "start": "electron .",
     "dist": "electron-builder",
@@ -17,7 +17,7 @@
   },
   "build": {
     "appId": "com.lyrik.app",
-    "productName": "Lyrik",
+    "productName": "Lyrikx",
     "directories": { "output": "dist" },
     "files": ["main.js", "players.js", "preload.js", "renderer/**", "assets/**", "win/**"],
     "asarUnpack": ["win/**"],
@@ -28,9 +28,9 @@
       "target": [{ "target": "dmg", "arch": ["arm64", "x64"] }],
       "extendInfo": {
         "LSUIElement": true,
-        "NSAppleEventsUsageDescription": "Lyrik reads the current song from Music or Spotify and controls playback.",
-        "NSAudioCaptureUsageDescription": "Lyrik listens to the music playing on your Mac so the edge lights can pulse with the beat.",
-        "NSMicrophoneUsageDescription": "Lyrik can listen through the microphone so the edge lights pulse with the beat."
+        "NSAppleEventsUsageDescription": "Lyrikx reads the current song from Music or Spotify and controls playback.",
+        "NSAudioCaptureUsageDescription": "Lyrikx listens to the music playing on your Mac so the edge lights can pulse with the beat.",
+        "NSMicrophoneUsageDescription": "Lyrikx can listen through the microphone so the edge lights pulse with the beat."
       }
     },
     "win": {

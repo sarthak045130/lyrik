@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for helping improve Lyrik. For substantial changes, open an issue first so the approach can be discussed before implementation.
+Thanks for helping improve Lyrikx. For substantial changes, open an issue first so the approach can be discussed before implementation.
 
 ## Local setup
 

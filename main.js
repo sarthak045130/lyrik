@@ -8,7 +8,7 @@ const createPlayers = require('./players');
 
 const isMac = process.platform === 'darwin';
 const isWin = process.platform === 'win32';
-const APP = 'Lyrik';
+const APP = 'Lyrikx';
 
 // single instance
 if (!app.requestSingleInstanceLock()) { app.quit(); }
@@ -151,7 +151,7 @@ function pushNow() {
 // ───────────────────────── network helpers ─────────────────────────
 async function fetchJson(url) {
   try {
-    const r = await fetch(url, { headers: { 'User-Agent': 'Lyrik/1.0' } });
+    const r = await fetch(url, { headers: { 'User-Agent': 'Lyrikx/1.0' } });
     return r.ok ? await r.json() : null;
   } catch (_) { return null; }
 }

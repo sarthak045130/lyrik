@@ -1,4 +1,4 @@
-name: Build Lyrik
+name: Build Lyrikx
 
 on:
   workflow_dispatch:
@@ -25,7 +25,7 @@ jobs:
       - run: npm run dist
       - uses: actions/upload-artifact@v4
         with:
-          name: lyrik-${{ matrix.os }}
+          name: lyrikx-${{ matrix.os }}
           path: |
             dist/*.dmg
             dist/*.exe

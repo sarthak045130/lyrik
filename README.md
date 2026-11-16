@@ -1,6 +1,6 @@
 <div align="center">
-  <img src="assets/icon.png" alt="Lyrik app icon" width="128" />
-  <h1>Lyrik</h1>
+  <img src="assets/icon.png" alt="Lyrikx app icon" width="128" />
+  <h1>Lyrikx</h1>
   <p><strong>Lyrics on screen. Light on the beat.</strong></p>
   <p>Full-screen, word-by-word lyrics with a moving, customizable edge-light strip for macOS and Windows.</p>
   <p>
@@ -18,15 +18,15 @@
 - Supports Apple Music and Spotify on Mac, plus media sessions available through Windows media controls.
 - Offers nine lyric styles, text and color controls, and multi-display support.
 
-Lyrics are provided by [LRCLIB](https://lrclib.net/). Lyrik uses the current player’s artwork when available and can look up artwork when it is not.
+Lyrics are provided by [LRCLIB](https://lrclib.net/). Lyrikx uses the current player’s artwork when available and can look up artwork when it is not.
 
 ## Install
 
 Download a build from the repository’s **Actions** tab:
 
-1. Open the latest successful **Build Lyrik** run.
+1. Open the latest successful **Build Lyrikx** run.
 2. Under **Artifacts**, download the package for your operating system.
-3. On Mac, open the `.dmg` and drag **Lyrik.app** to **Applications**. The Mac build is unsigned; on first launch, Control-click the app and choose **Open**.
+3. On Mac, open the `.dmg` and drag **Lyrikx.app** to **Applications**. The Mac build is unsigned; on first launch, Control-click the app and choose **Open**.
 4. On Windows, run the setup `.exe` or use the portable `.exe`.
 
 To build it yourself, install [Node.js](https://nodejs.org), open a terminal in this folder, then run:
@@ -51,7 +51,7 @@ Open **Light Settings…** from the menu-bar/system-tray menu, or right-click th
 - **Beat Sync** listens to system audio and makes the strip surge and flare on beats.
 - Choose colors, direction, one to three strips, edges, speed, length, thickness, glow, brightness, and pulse fade.
 
-On macOS 14.2 and later, allow **System Audio Recording** for Lyrik when prompted. Windows captures system audio automatically. If audio capture is unavailable, the strip continues moving steadily and Light Settings explains the status.
+On macOS 14.2 and later, allow **System Audio Recording** for Lyrikx when prompted. Windows captures system audio automatically. If audio capture is unavailable, the strip continues moving steadily and Light Settings explains the status.
 
 ## Supported players
 
@@ -60,13 +60,13 @@ On macOS 14.2 and later, allow **System Audio Recording** for Lyrik when prompte
 | macOS | Apple Music, Spotify |
 | Windows | Apps available through Windows media controls, including Spotify, Apple Music, iTunes, browsers, and VLC |
 
-On Mac, allow Lyrik to control Music or Spotify when macOS asks. Lyrics and artwork depend on what the player and online lookup can provide.
+On Mac, allow Lyrikx to control Music or Spotify when macOS asks. Lyrics and artwork depend on what the player and online lookup can provide.
 
 ## Build installers with GitHub Actions
 
-The **Build Lyrik** workflow can build for both macOS and Windows:
+The **Build Lyrikx** workflow can build for both macOS and Windows:
 
-- Open **Actions → Build Lyrik → Run workflow** to start a build.
+- Open **Actions → Build Lyrikx → Run workflow** to start a build.
 - Push a version tag such as `v1.0.1` to trigger a build automatically.
 - Download the resulting `.dmg` and `.exe` files from that run’s artifacts.
 
