@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Lyrik</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="bg"><img id="art" alt=""></div>
+  <div id="shade"></div>
+  <div id="stage"></div>
+  <canvas id="lights"></canvas>
+  <div id="toast"></div>
+  <div id="demo-tag">Demo — play a song in your music app</div>
+
+  <div id="controls">
+    <div class="row">
+      <button class="b sm" id="b-sync" title="Lyric sync (click +0.25s, ⇧-click −0.25s)">
+        <svg viewBox="0 0 24 24"><path d="M12 5V2L8 6l4 4V7a5 5 0 1 1-5 5H5a7 7 0 1 0 7-7z"/></svg></button>
+      <button class="b" id="b-prev" title="Previous"><svg viewBox="0 0 24 24"><path d="M11 6v12L2 12zm11 0v12l-9-6z"/></svg></button>
+      <button class="b lg" id="b-play" title="Play / Pause">
+        <svg id="i-pause" viewBox="0 0 24 24"><path d="M6 5h4v14H6zm8 0h4v14h-4z"/></svg>
+        <svg id="i-play" viewBox="0 0 24 24" style="display:none"><path d="M7 4l13 8-13 8z"/></svg></button>
+      <button class="b" id="b-next" title="Next"><svg viewBox="0 0 24 24"><path d="M2 6v12l9-6zm11 0v12l9-6z"/></svg></button>
+      <button class="b sm" id="b-repeat" title="Repeat">
+        <svg viewBox="0 0 24 24"><path d="M12 4a8 8 0 1 0 8 8h-2a6 6 0 1 1-6-6v3l5-4-5-4z"/></svg></button>
+    </div>
+    <div class="row">
+      <button class="b sm" id="b-dim" title="Dim background"><svg viewBox="0 0 24 24"><path d="M9 21h6v-1H9zm3-19a7 7 0 0 0-4 12.7V17h8v-2.3A7 7 0 0 0 12 2z"/></svg></button>
+      <button class="b pill" id="b-settings">Settings</button>
+      <button class="b sm" id="b-lights" title="Edge lights (right-click for light settings)"><svg viewBox="0 0 24 24"><path d="M12 2l2.2 6.3L21 9l-5 4.2L17.5 20 12 16.4 6.5 20 8 13.2 3 9l6.8-.7z"/></svg></button>
+      <button class="b sm" id="b-art" title="Album art background"><svg viewBox="0 0 24 24"><path d="M3 4h18v13H3zm2 2v9h14V6zm4 13h6v2H9z"/></svg></button>
+      <button class="b sm" id="b-icons" title="Word icons"><svg viewBox="0 0 24 24"><path d="M3 4h18v13H3zm2 2v9h14V6zm6 1l1.2 2.6 2.8.3-2.1 1.9.6 2.8L11 13l-2.5 1.6.6-2.8L7 9.9l2.8-.3z"/></svg></button>
+      <button class="b sm" id="b-full" title="Fullscreen / windowed"><svg viewBox="0 0 24 24"><path d="M3 5h18v14H3zm2 3v9h14V8z"/></svg></button>
+    </div>
+  </div>
+
+<script src="icons.js"></script>
+<script src="analyzer.js"></script>
+<script src="lights.js"></script>
+<script src="app.js"></script>
+</body>
+</html>

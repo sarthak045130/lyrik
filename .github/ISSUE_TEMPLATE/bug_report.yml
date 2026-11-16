@@ -1,0 +1,49 @@
+name: Bug report
+description: Report a problem with Lyrik
+labels: []
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Please search existing issues first. Never include passwords, private tokens,
+        or private song files in an issue.
+  - type: input
+    id: version
+    attributes:
+      label: Lyrik version
+      placeholder: 1.0.0
+    validations:
+      required: true
+  - type: dropdown
+    id: platform
+    attributes:
+      label: Platform
+      options:
+        - macOS (Apple silicon)
+        - macOS (Intel)
+        - Windows 10
+        - Windows 11
+        - Other
+    validations:
+      required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: What happened?
+      description: Describe the issue and what you expected to happen.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce
+      placeholder: 1. Open Lyrik…
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Logs or screenshots
+      description: Remove personal information before sharing.
+    validations:
+      required: false

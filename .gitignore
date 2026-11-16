@@ -1,0 +1,16 @@
+# Dependencies and generated installers
+node_modules/
+dist/
+release/
+*.dmg
+*.exe
+*.blockmap
+
+# Local settings and OS/editor files
+.env
+.env.*
+!.env.example
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

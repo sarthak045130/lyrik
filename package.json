@@ -1,0 +1,42 @@
+{
+  "name": "lyrik",
+  "productName": "Lyrik",
+  "version": "1.0.0",
+  "description": "Full-screen, word-by-word lyrics with beat-synced edge lights — Windows and Mac",
+  "main": "main.js",
+  "author": "Lyrik",
+  "scripts": {
+    "start": "electron .",
+    "dist": "electron-builder",
+    "dist:mac": "electron-builder --mac",
+    "dist:win": "electron-builder --win"
+  },
+  "devDependencies": {
+    "electron": "^39.0.0",
+    "electron-builder": "^25.1.8"
+  },
+  "build": {
+    "appId": "com.lyrik.app",
+    "productName": "Lyrik",
+    "directories": { "output": "dist" },
+    "files": ["main.js", "players.js", "preload.js", "renderer/**", "assets/**", "win/**"],
+    "asarUnpack": ["win/**"],
+    "mac": {
+      "category": "public.app-category.music",
+      "icon": "assets/icon.png",
+      "identity": null,
+      "target": [{ "target": "dmg", "arch": ["arm64", "x64"] }],
+      "extendInfo": {
+        "LSUIElement": true,
+        "NSAppleEventsUsageDescription": "Lyrik reads the current song from Music or Spotify and controls playback.",
+        "NSAudioCaptureUsageDescription": "Lyrik listens to the music playing on your Mac so the edge lights can pulse with the beat.",
+        "NSMicrophoneUsageDescription": "Lyrik can listen through the microphone so the edge lights pulse with the beat."
+      }
+    },
+    "win": {
+      "icon": "assets/icon.ico",
+      "target": [{ "target": "nsis", "arch": ["x64"] }, { "target": "portable", "arch": ["x64"] }]
+    },
+    "nsis": { "oneClick": false, "allowToChangeInstallationDirectory": true, "createDesktopShortcut": true }
+  }
+}
